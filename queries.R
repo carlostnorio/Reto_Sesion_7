@@ -22,16 +22,10 @@ DataEspañol <- Español %>% filter(Language == "Spanish")
 head(DataEspañol)
 class(DataEspañol)
 
-DataEspañol %>% ggplot() + 
-  aes(x=CountryCode, y=Percentage, color=IsOfficial) +
-  ylab("Porcentaje") +
-  xlab("Código de pais") + 
-  theme_light()
-
 DataEspañol %>% ggplot(aes(x =CountryCode, y=Percentage, fill = IsOfficial)) + 
   geom_bin2d() +
   coord_flip() +
   ylab("Porcentaje") +
   xlab("Código de pais") + 
-  theme_light()
+  theme_dark()
 
