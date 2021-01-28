@@ -34,3 +34,4 @@ DataEspañol %>% ggplot(aes(x =CountryCode, y=Percentage, fill = IsOfficial)) +
   ylab("Porcentaje") +
   xlab("Código de pais") + 
   theme_light()
+
